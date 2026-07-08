@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abrahão Levy — Data Analyst</title>
+  <meta name="description"
+    content="Portfólio de Abrahão Levy, Analista de Dados especializado em BI, Dashboards, SQL, Python e processos ETL." />
+  <meta property="og:title" content="Abrahão Levy — Data Analyst" />
+  <meta property="og:description"
+    content="Transformando dados brutos em decisões acionáveis. Especialista em BI, SQL, Python e ETL." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">~/hello-there <span class="cursor"></span></div>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li>
+            <a href="#sobre"><span class="n">01.</span>sobre</a>
+          </li>
+          <li>
+            <a href="#skills"><span class="n">02.</span>skills</a>
+          </li>
+          <li>
+            <a href="#projetos"><span class="n">03.</span>projetos</a>
+          </li>
+          <li>
+            <a href="#experiencia"><span class="n">04.</span>experiência</a>
+          </li>
+          <li>
+            <a href="#contato"><span class="n">05.</span>contato</a>
+          </li>
+        </ul>
+        <a href="#" class="btn primary cv-btn">Currículo</a>
+      </div>
+      <button class="burger" id="burger-btn">[+]</button>
+    </nav>
+    <div class="ticker-bar">
+      <div class="ticker-track" id="ticker"></div>
+    </div>
+  </header>
+
+  <main>
+    
+    <section class="hero" style="border-top: none; padding-top: 72px">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <div class="eyebrow">Disponível para oportunidades</div>
+            <h1>
+              <span id="type-name"></span><span class="cursor-blink">|</span> <br />Transformo dados <span
+                class="gradient-text">brutos</span> em decisão.
+            </h1>
+            <p class="lead">
+              Analista de Dados focado em construir dashboards e análises que
+              ajudam times a entender o próprio negócio. Sem enrolação, direto do
+              banco de dados pro insight.
+            </p>
+
+            <div class="terminal-window">
+              <div class="term-titlebar">
+                <div class="dot r"></div>
+                <div class="dot y"></div>
+                <div class="dot g"></div>
+                <span>zsh — sobre_mim</span>
+              </div>
+              <div class="term-body">
+                <div class="line">
+                  <span class="prompt">abrahaolevy@dados</span>
+                  <span class="out">~</span> $ cat funcao.txt
+                </div>
+                <div class="line out" id="typed-line"></div>
+              </div>
+            </div>
+
+            <div class="cta-row">
+              <a href="#projetos" class="btn primary">Ver projetos</a>
+              <a href="#contato" class="btn ghost">Falar comigo</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="avatar hero-avatar">
+              <img src="assets/img/profile.jpg" alt="Foto de Abrahão Levy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="sobre">
+      <div class="wrap reveal">
+        <div class="sec-head">
+          <span class="sec-index">01</span>
+          <h2>Sobre mim</h2>
+          <div class="sec-line"></div>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Sou <strong>Analista de Dados</strong>, formado em Análise e
+              Desenvolvimento de Sistemas, com uma forte capacidade de
+              resolução de problemas construída através do meu background em
+              Suporte de TI. Minha paixão é traduzir dados complexos em
+              histórias claras e acionáveis. Atuo no ciclo de ponta a ponta:
+              desde a modelagem e normalização de bancos de dados, passando
+              por processos de ETL com Pentaho, até a construção do visual
+              final. No dia a dia, crio soluções robustas utilizando SQL
+              (PostgreSQL), Python e Power BI, além de explorar aplicações
+              interativas com Streamlit e Plotly. Meu maior objetivo é
+              garantir que a área de negócios receba KPIs precisos de forma
+              simples e intuitiva.
+            </p>
+            <p>
+              Estou sempre testando formas melhores de apresentar KPIs de
+              forma clara pra quem não é técnico.
+            </p>
+            <div class="meta-list">
+              <div>local &gt; <span>Fortaleza, Ceará</span></div>
+              <div>foco &gt; <span>BI · Dashboards · SQL · Python</span></div>
+              <div>
+                status &gt;
+                <span>Aberto a futuras colaborações!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="skills">
+      <div class="wrap reveal">
+        <div class="sec-head">
+          <span class="sec-index">02</span>
+          <h2>Skills</h2>
+          <div class="sec-line"></div>
+        </div>
+        <div class="skills-grid">
+          
+          <div class="skill-card">
+            <h3>Linguagens & Bancos</h3>
+            <div class="skill-row">
+              <span class="name">Python (Pandas, NumPy)</span>
+              <div class="bar">
+                <div style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="name">SQL Avançado</span>
+              <div class="bar">
+                <div style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="name">Bancos Relacionais (PostgreSQL)</span>
+              <div class="bar">
+                <div style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="name">Modelagem & NoSQL</span>
+              <div class="bar">
+                <div style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="skill-card">
+            <h3>Visualização & Data Apps</h3>
+            <div class="skill-row">
+              <span class="name">Power BI (DAX & Power Query)</span>
+              <div class="bar">
+                <div style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="name">Streamlit</span>
+              <div class="bar">
+                <div style="width: 78%"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="name">Plotly & Seaborn</span>
+              <div class="bar">
+                <div style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="name">Excel Avançado</span>
+              <div class="bar">
+                <div style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="skill-card">
+            <h3>Engenharia & Data Science</h3>
+            <div class="skill-row">
+              <span class="name">Pipelines de Dados & ETL</span>
+              <div class="bar">
+                <div style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="name">Arquitetura de DW & Modelagem</span>
+              <div class="bar">
+                <div style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="name">Machine Learning (Scikit-Learn)</span>
+              <div class="bar">
+                <div style="width: 65%"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="name">Git & Versionamento</span>
+              <div class="bar">
+                <div style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="projetos">
+      <div class="wrap reveal">
+        <div class="sec-head">
+          <span class="sec-index">03</span>
+          <h2>Projetos</h2>
+          <div class="sec-line"></div>
+        </div>
+        <div class="featured-project">
+          <div class="featured-visual">
+            <div class="browser-mockup">
+              <div class="browser-bar">
+                <div class="dot r"></div>
+                <div class="dot y"></div>
+                <div class="dot g"></div>
+                <span class="browser-url">dashboard-techvendas.streamlit.app</span>
+              </div>
+              <iframe src="https://dashboard-techvendas.streamlit.app/?embed=true"
+                style="width: 100%; height: 380px; border: none; display: block;"></iframe>
+            </div>
+          </div>
+          <div class="featured-body">
+            <span class="proj-tag">DASHBOARD & PYTHON</span>
+            <h3>Dashboard Corporativo de Vendas</h3>
+            <p>
+              Uma aplicação interativa de Business Intelligence construída inteiramente em <strong>Python</strong> e <strong>Streamlit</strong>. 
+              Conectado diretamente a um banco <strong>PostgreSQL</strong>, o dashboard permite explorar dados históricos, fazer breakdown por categoria e analisar tendências de receita em tempo real.
+            </p>
+            <div class="proj-impact">
+              <span>▲</span> Redução de 3h/semana em relatórios manuais<br>
+              <span>▲</span> Decisão baseada em dados em tempo real
+            </div>
+            <div class="proj-links">
+              <a href="https://dashboard-techvendas.streamlit.app/" target="_blank" class="btn primary">Ver aplicação ao vivo</a>
+              <a href="https://github.com/abrakkkkk/dashboard-techvendas" target="_blank" class="btn ghost">Repositório GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="experiencia">
+      <div class="wrap reveal">
+        <div class="sec-head">
+          <span class="sec-index">04</span>
+          <h2>Experiência</h2>
+          <div class="sec-line"></div>
+        </div>
+
+        <div class="commit">
+          <div>
+            <div class="commit-hash">commit a3f9c21</div>
+            <div class="commit-date">Ago 2024 — Abr 2026</div>
+          </div>
+          <div class="commit-body">
+            <h3>Analista de Suporte Técnico</h3>
+            <div class="role-meta">Ref Soluções e Automações</div>
+            <ul>
+              <li>
+                Análise de logs e diagnósticos de falhas em bancos de dados Firebird e PostgreSQL.
+              </li>
+              <li>
+                Integração e consistência de dados gerados por sistemas PDV (segmento FMCG).
+              </li>
+              <li>
+                Elaboração de relatórios gerenciais e documentação técnica, otimizando fluxos de trabalho.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="commit">
+          <div>
+            <div class="commit-hash">commit 7e21bd4</div>
+            <div class="commit-date">Jul 2026</div>
+          </div>
+          <div class="commit-body">
+            <h3>Formação em Data Analytics e I.A.</h3>
+            <div class="role-meta">Digital College Brasil (Proj. Leão Tech 2.0)</div>
+            <ul>
+              <li>
+                Formação prática e intensiva no desenvolvimento de soluções de dados e Inteligência Artificial.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="commit">
+          <div>
+            <div class="commit-hash">commit 1a02f88</div>
+            <div class="commit-date">Dez 2025</div>
+          </div>
+          <div class="commit-body">
+            <h3>Análise e Desenvolvimento de Sistemas</h3>
+            <div class="role-meta">UNIFOR</div>
+            <ul>
+              <li>Sólida base em banco de dados, lógica de programação e arquitetura de sistemas.</li>
+              <li>Desenvolvimento de projetos acadêmicos com foco estrutural e analítico.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="contato">
+      <div class="wrap reveal">
+        <div class="sec-head">
+          <span class="sec-index">05</span>
+          <h2>Contato</h2>
+          <div class="sec-line"></div>
+        </div>
+        <div class="contact-box">
+          <h2>Vamos conversar sobre dados?</h2>
+          <p>
+            Aberto a oportunidades e conversas sobre a área de Dados. Me chama!
+          </p>
+          <div class="contact-links">
+            <a href="mailto:abrahaolevyy@gmail.com" class="btn primary">Enviar e-mail</a>
+            <a href="https://www.linkedin.com/in/abrahão-levy-04b85125b/" target="_blank" class="btn ghost">LinkedIn</a>
+            <a href="https://github.com/abrakkkkk" target="_blank" class="btn ghost">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Abrahão Levy</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
