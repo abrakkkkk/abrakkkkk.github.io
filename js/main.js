@@ -84,8 +84,9 @@
       const navLinks = document.querySelector(".nav-links")
       if(burger) {
         burger.addEventListener("click", () => {
-          navLinks.classList.toggle("active")
-          burger.textContent = navLinks.classList.contains("active") ? "[-]" : "[+]"
+          const isActive = navLinks.classList.toggle("active")
+          burger.textContent = isActive ? "[-]" : "[+]"
+          burger.setAttribute("aria-expanded", isActive)
         })
         
         
@@ -93,6 +94,7 @@
           link.addEventListener("click", () => {
             navLinks.classList.remove("active")
             burger.textContent = "[+]"
+            burger.setAttribute("aria-expanded", "false")
           })
         })
       }
