@@ -591,6 +591,37 @@
         border-radius: 3px;
       }
 
+      .soft-skills-card {
+        grid-column: 1 / -1;
+      }
+
+      .soft-skills-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+
+      .soft-skill-item {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        background: var(--bg-panel-alt);
+        padding: 16px;
+        border-radius: 8px;
+        border: 1px solid var(--border-soft);
+      }
+
+      .soft-skill-item .name {
+        color: var(--text-hi);
+        font-weight: 500;
+        font-size: 14.5px;
+      }
+
+      .soft-skill-item .desc {
+        color: var(--text-dim);
+        font-size: 13.5px;
+        line-height: 1.5;
+      }
 
       .featured-project {
         display: grid;
@@ -805,6 +836,14 @@
         }
 
         .skills-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .soft-skills-card {
+          grid-column: 1 / -1;
+        }
+
+        .soft-skills-list {
           grid-template-columns: 1fr;
         }
 
