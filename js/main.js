@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initTypingEffects();
   initScrollReveal();
   initMobileMenu();
+  initCarousel();
 });
 
 function initTicker() {
@@ -146,4 +147,51 @@ function initMobileMenu() {
       burgerButton.setAttribute("aria-expanded", "false");
     });
   });
+}
+
+function initCarousel() {
+  const track = document.getElementById("projects-track");
+  if (!track) return;
+
+  const slides = Array.from(track.children);
+  const prevBtn = document.getElementById("carousel-prev");
+  const nextBtn = document.getElementById("carousel-next");
+  const dotsContainer = document.getElementById("carousel-dots");
+  
+  if (slides.length === 0) return;
+  
+  let currentIndex = 0;
+
+  slides.forEach((_, index) => {
+    const dot = document.createElement("button");
+    if (index === 0) dot.classList.add("active");
+    dot.setAttribute("aria-label", `Slide ${index + 1}`);
+    dot.addEventListener("click", () => goToSlide(index));
+    dotsContainer.appendChild(dot);
+  });
+  
+  const dots = Array.from(dotsContainer.children);
+
+  function updateCarousel() {
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    
+    dots.forEach((dot, index) => {
+      dot.classList.toggle("active", index === currentIndex);
+    });
+  }
+
+  function goToSlide(index) {
+    currentIndex = index;
+    updateCarousel();
+  }
+
+  prevBtn.addEventListener("click", () => {
+    goToSlide((currentIndex - 1 + slides.length) % slides.length);
+  });
+
+  nextBtn.addEventListener("click", () => {
+    goToSlide((currentIndex + 1) % slides.length);
+  });
+
+  updateCarousel();
 }

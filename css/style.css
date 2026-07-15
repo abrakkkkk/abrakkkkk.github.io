@@ -882,6 +882,90 @@
         }
       }
 
+      /* --- Carousel Styles --- */
+      .carousel-wrapper {
+        position: relative;
+        width: 100%;
+        padding: 0 44px; /* Space for outside buttons */
+      }
+      
+      .carousel-container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .carousel-track {
+        display: flex;
+        transition: transform 0.4s ease-in-out;
+      }
+
+      .carousel-slide {
+        flex: 0 0 100%;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: var(--bg-panel-alt);
+        border: 1px solid var(--accent);
+        color: var(--accent);
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-mono);
+        font-size: 20px;
+        transition: all 0.2s;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      }
+
+      .carousel-btn:hover {
+        background: var(--accent);
+        color: #04231f;
+      }
+
+      .carousel-btn.prev {
+        left: -10px;
+      }
+
+      .carousel-btn.next {
+        right: -10px;
+      }
+
+      .carousel-btn:disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+      }
+      
+      .carousel-dots {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 24px;
+      }
+      
+      .carousel-dots button {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--border);
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      
+      .carousel-dots button.active {
+        background: var(--accent);
+      }
+
       @media (prefers-reduced-motion: reduce) {
         * {
           animation: none !important;

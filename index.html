@@ -17,7 +17,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=1.0.1" />
+  <link rel="stylesheet" href="css/style.css?v=3.0.0" />
 </head>
 
 <body>
@@ -275,41 +275,73 @@
           <h2>Projetos</h2>
           <div class="sec-line"></div>
         </div>
-        <div class="featured-project">
-          <div class="featured-visual">
-            <div class="browser-mockup">
-              <div class="browser-bar">
-                <div class="dot r"></div>
-                <div class="dot y"></div>
-                <div class="dot g"></div>
-                <span class="browser-url">techvendas-dashboard.streamlit.app</span>
+        <div class="carousel-wrapper">
+          <div class="carousel-container">
+            <div class="carousel-track" id="projects-track">
+              
+              <div class="featured-project carousel-slide">
+                <div class="featured-visual">
+                  <div class="browser-mockup">
+                    <div class="browser-bar">
+                      <div class="dot r"></div>
+                      <div class="dot y"></div>
+                      <div class="dot g"></div>
+                      <span class="browser-url">dashboard-clientes-compras</span>
+                    </div>
+                    <img src="assets/img/1775696392074.jpg" alt="Dashboard Power BI - Relatório de Clientes e Compras" style="width: 100%; height: auto; display: block;" />
+                  </div>
+                </div>
+                <div class="featured-body">
+                  <span class="proj-tag">POWER BI & POSTGRESQL</span>
+                  <h3>Relatório de Clientes Ativos e Compras Recentes</h3>
+                  <p>
+                    Dashboard interativo construído no <strong>Power BI</strong> com foco em transformar dados brutos em insights visuais que facilitam a tomada de decisão. A etapa de engenharia de dados envolveu a criação de uma <strong>View diretamente no banco de dados (PostgreSQL)</strong> e sua conexão com a ferramenta de BI. Isso garantiu uma fonte de dados organizada, eficiente e pronta para análise. O objetivo da análise foi entender o comportamento de compra entre Pessoas Físicas (PF) e Jurídicas (PJ), identificando volumes de vendas e os clientes de maior impacto no faturamento.
+                  </p>
+                </div>
               </div>
-              <iframe src="https://techvendas-dashboard.streamlit.app/?embed=true"
-                style="width: 100%; height: 380px; border: none; display: block;"></iframe>
+
+              <div class="featured-project carousel-slide">
+                <div class="featured-visual">
+                  <div class="browser-mockup">
+                    <div class="browser-bar">
+                      <div class="dot r"></div>
+                      <div class="dot y"></div>
+                      <div class="dot g"></div>
+                      <span class="browser-url">techvendas-dashboard.streamlit.app</span>
+                    </div>
+                    <iframe src="https://techvendas-dashboard.streamlit.app/?embed=true"
+                      style="width: 100%; height: 380px; border: none; display: block;"></iframe>
+                  </div>
+                </div>
+                <div class="featured-body">
+                  <span class="proj-tag">STREAMLIT & PYTHON</span>
+                  <h3>Dashboard Corporativo de Vendas</h3>
+                  <p>
+                    Uma aplicação interativa de Business Intelligence construída inteiramente em <strong>Python</strong> e
+                    <strong>Streamlit</strong>.
+                    Conectado diretamente a um banco <strong>PostgreSQL</strong>, o dashboard permite explorar dados
+                    históricos, fazer breakdown por categoria e analisar tendências de receita em tempo real.
+                  </p>
+                  <div class="proj-impact">
+                    <span>▲</span> Redução de 3h/semana em relatórios manuais<br>
+                    <span>▲</span> Decisão baseada em dados em tempo real
+                  </div>
+                  <div class="proj-links">
+                    <a href="https://techvendas-dashboard.streamlit.app/" target="_blank" rel="noopener noreferrer"
+                      class="btn primary">Ver aplicação ao
+                      vivo</a>
+                    <a href="https://github.com/abrakkkkk/dashboard-techvendas" target="_blank" rel="noopener noreferrer"
+                      class="btn ghost">Repositório
+                      GitHub</a>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
-          <div class="featured-body">
-            <span class="proj-tag">DASHBOARD & PYTHON</span>
-            <h3>Dashboard Corporativo de Vendas</h3>
-            <p>
-              Uma aplicação interativa de Business Intelligence construída inteiramente em <strong>Python</strong> e
-              <strong>Streamlit</strong>.
-              Conectado diretamente a um banco <strong>PostgreSQL</strong>, o dashboard permite explorar dados
-              históricos, fazer breakdown por categoria e analisar tendências de receita em tempo real.
-            </p>
-            <div class="proj-impact">
-              <span>▲</span> Redução de 3h/semana em relatórios manuais<br>
-              <span>▲</span> Decisão baseada em dados em tempo real
-            </div>
-            <div class="proj-links">
-              <a href="https://techvendas-dashboard.streamlit.app/" target="_blank" rel="noopener noreferrer"
-                class="btn primary">Ver aplicação ao
-                vivo</a>
-              <a href="https://github.com/abrakkkkk/dashboard-techvendas" target="_blank" rel="noopener noreferrer"
-                class="btn ghost">Repositório
-                GitHub</a>
-            </div>
-          </div>
+          <button class="carousel-btn prev" id="carousel-prev" aria-label="Anterior">&larr;</button>
+          <button class="carousel-btn next" id="carousel-next" aria-label="Próximo">&rarr;</button>
+          <div class="carousel-dots" id="carousel-dots"></div>
         </div>
       </div>
     </section>
@@ -409,7 +441,7 @@
     <p>© 2026 Abrahão Levy</p>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=3.0.0"></script>
 </body>
 
 </html>
